@@ -8,9 +8,9 @@ import javax.persistence.Inheritance;
 import javax.persistence.ManyToMany;
 import javax.persistence.MappedSuperclass;
 
-@MappedSuperclass
+
 @Entity
-@Inheritance(strategy = SINGLE_TABLE) //porque tengo solo 2 herencias por ahora
+@Inheritance(strategy = SINGLE_TABLE) //porque comparten varios atributos, no vale la pena mas tablas (?
 @DiscriminatorColumn(name = "tipo")
 public class Lugar {
 	@Id

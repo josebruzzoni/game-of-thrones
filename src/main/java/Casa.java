@@ -4,7 +4,6 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.MappedSuperclass;
 
-@MappedSuperclass
 @Entity
 public class Casa {
 	@Id
